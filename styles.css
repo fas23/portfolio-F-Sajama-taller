@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&display=swap');
+
+:root {
+  --primary-color: #3282B8;
+  --primary-color-dark: #0F4C75;
+  --accent-color: #FFF8F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.container {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+  height: 80vh;
+  width: 100vw;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.menu a:hover{
+  background-color: var(--primary-color);;
+  color: #191c32;
+  transition: ease-in .4s;
+}
+
+.menu .active {
+  color: aqua;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.logo {
+  text-decoration: none;
+  margin: 16px 36px;
+  color: var(--accent-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -10px; 
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: right;
+  padding-top: 90px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span{
+  color: aqua;
+}
+
+.download-cv{
+  padding: 10px 20px;
+  background-color: aqua;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.about, .portfolio {
+  width: 100vw;
+}
+
+.portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color-dark);
+  color: #fff;
+}
+
+.portfolio-heading h2{
+  font-size: 2em;
+  color: #fff;
+}
+
+.about-info, .portfolio-heading, .content{
+  padding: 2em;
+}
+.about-info h2, .content h2{ 
+  font-size: 2em;
+  color: #191c32;
+}
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: aqua;
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+
+.project-list {
+  list-style: none;
+  padding: 1em;
+}
+
+.project-list li {
+  margin-bottom: 30px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #191c32;
+  font-style: italic;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.socials-icon {
+  font-size: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  color: var(--accent-color);
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.input-field {
+  border: 0;
+  background-color: var(--accent-color);
+  font: inherit;
+  font-size: 1.125rem;
+  padding: .25rem 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.input-field:focus {
+  outline: 0;
+  border-bottom-width: 3px;
+}
+
+.btn-send-message {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: aqua;
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+  transition: all 250ms;
+  color: var(--primary-color-dark);
+  margin-bottom: 10px;
+}
+
+.btn-send-message:hover,
+.btn-send-message:focus {
+  background-color: var(--primary-color-dark);
+  color: var(--accent-color);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--primary-color-dark);
+  color: var(--accent-color);
+  padding: 20px;
+}
+
+.footer-section-container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-size: 18px;
+}
